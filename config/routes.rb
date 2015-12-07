@@ -3,6 +3,12 @@ Rails.application.routes.draw do
 
   get '/welcome', to: 'home#welcome'
   get '/about_us', to: 'home#about_us'
+  get '/search', to: 'home#search'
+
+  get '/rings', to: 'products#rings'
+  get '/earrings', to: 'products#earrings'
+  get '/necklaces', to: 'products#necklaces'
+  get '/sets', to: 'products#sets'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
